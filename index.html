@@ -37,7 +37,8 @@
         }
         section {
             padding: 20px;
-            margin: 20px 0;
+            margin: 20px auto;
+            max-width: 800px; /* セクションの横幅を制限 */
         }
         .about {
             display: flex;
@@ -54,22 +55,38 @@
             max-width: 600px;
         }
         .skills {
+            text-align: center; /* セクションタイトルの中央寄せ */
+        }
+        .skill-items {
             display: flex;
-            justify-content: space-around;
+            justify-content: center; /* アイテム全体をセクション中央に配置 */
             align-items: flex-start;
         }
         .skill-item {
-            text-align: center;
-            max-width: 200px;
+            text-align: left; /* アイテム内のテキストを左寄せ */
+            margin: 0 20px;
         }
         .skill-item img {
             max-width: 50px;
+            display: block;
+            margin: 0 auto 10px;
         }
         h2 {
             text-align: center;
             border-bottom: 1px solid #ccc;
             padding-bottom: 10px;
             width: 100%;
+        }
+        .overseas img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .overseas {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -96,42 +113,36 @@
     <section id="presentation">
         <h2>PRESENTATION</h2>
         <p>大島将，岡本有司，原田陽平，鎌田真由美，奥野 恭史<br>「Genes Feature Extraction Method in Gene Regulatory Networks Based on Distance between Graphs（グラフ間距離に基づく遺伝子制御ネットワークの重要遺伝子抽出法）」、『人工知能学会全国大会(査読付き)』、浜松,5月、2024年</p>
-
     </section>
     
     <section id="skills" class="skills">
         <h2>SKILLS</h2>
-        <div class="skill-item">
-            <img src="Python_logo.jpg" alt="Python">
-            <p>Python<br>Pythonコーディングを用いた研究活動経験<br>PytorchおよびTensorflowを用いた深層学習モデル実装経験</p>
+        <div class="skill-items">
+            <div class="skill-item">
+                <img src="Python_logo.jpg" alt="Python">
+                <p>Python<br>Pythonコーディングを用いた研究活動経験<br>PytorchおよびTensorflowを用いた深層学習モデル実装経験</p>
+            </div>
+            <div class="skill-item">
+                <img src="qual_logo.jpg" alt="Qualification">
+                <p>Qualification<br>統計検定2級(優秀賞)、バイオインフォマティクス技術者認定試験、G検定</p>
+            </div>
         </div>
-        <div class="skill-item">
-            <img src="qual_logo.jpg" alt="English">
-            <p>Qualification<br>統計検定2級(優秀賞)、バイオインフォマティクス技術者認定試験、G検定</p>
-        </div>
-
-    
     </section>
         
     <section id="overseas" class="overseas">
         <h2>OVERSEAS</h2>
         <img src="NASA_logo.JPG" alt="NASAの写真">
-        <p>高校生の時(2018年3月)、2~3週間ほどアメリカのNASAに研修に行き、実際にケネディ宇宙センターを訪れ、宇宙開発について学んだ。
-        またNASAの他にも、ハーバード大学やマサチューセッツ工科大学(MIT)、ダナ・ファーバー癌研究所を訪問し、現地の学生と交流したり、分子標的薬の研究についても学んだ。</p>
+        <p>高校生の時(2018年3月)、2~3週間ほどアメリカのNASAに研修に行き、実際にケネディ宇宙センターを訪れ、宇宙開発について学んだ。またNASAの他にも、ハーバード大学やマサチューセッツ工科大学(MIT)、ダナ・ファーバー癌研究所を訪問し、現地の学生と交流したり、分子標的薬の研究についても学んだ。</p>
     </section>
 
     <section id="internship" class="internship">
         <h2>INTERNSHIP</h2>
         <div class="intern-item">
-           
             <p>東大松尾研発スタートアップ株式会社EQUES<br>AIエンジニアとしてLLM搭載型AIソリューション事業に従事。製薬企業と連携し、品質保証プロセスのDXプロジェクトに取り組む。</p>
         </div>
-       
-        
+        <div class="intern-item">
             <p>株式会社AVILEN<br>AIエンジニアとして図面認識AIモデル開発事業に従事。</p>
         </div>
-        
-        
     </section>
     
     <section id="contact">
