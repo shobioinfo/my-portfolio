@@ -40,18 +40,18 @@
             margin: 20px auto;
             max-width: 800px; /* セクションの横幅を制限 */
         }
-        .about {
+        .about, .overseas {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             flex-wrap: wrap;
         }
-        .about img {
+        .about img, .overseas img {
             max-width: 200px;
             border-radius: 50%;
             margin-right: 20px;
         }
-        .about p {
+        .about p, .overseas p {
             max-width: 600px;
         }
         .skills {
@@ -61,13 +61,14 @@
             display: flex;
             justify-content: center; /* アイテム全体をセクション中央に配置 */
             align-items: flex-start;
+            gap: 40px;
         }
         .skill-item {
-            text-align: left; /* アイテム内のテキストを左寄せ */
+            text-align: center; /* アイテム内のテキストを中央寄せ */
             margin: 0 20px;
         }
         .skill-item img {
-            max-width: 50px;
+            max-width: 70px;
             display: block;
             margin: 0 auto 10px;
         }
@@ -77,16 +78,9 @@
             padding-bottom: 10px;
             width: 100%;
         }
-        .overseas img {
-            max-width: 200px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-        .overseas {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
+        .internship h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -120,11 +114,13 @@
         <div class="skill-items">
             <div class="skill-item">
                 <img src="Python_logo.jpg" alt="Python">
-                <p>Python<br>Pythonコーディングを用いた研究活動経験<br>PytorchおよびTensorflowを用いた深層学習モデル実装経験</p>
+                <p>Python</p>
+                <p>Pythonコーディングを用いた研究活動経験<br>PytorchおよびTensorflowを用いた深層学習モデル実装経験</p>
             </div>
             <div class="skill-item">
                 <img src="qual_logo.jpg" alt="Qualification">
-                <p>Qualification<br>統計検定2級(優秀賞)、バイオインフォマティクス技術者認定試験、G検定</p>
+                <p>Qualification</p>
+                <p>統計検定2級(優秀賞)、バイオインフォマティクス技術者認定試験、G検定</p>
             </div>
         </div>
     </section>
@@ -138,10 +134,12 @@
     <section id="internship" class="internship">
         <h2>INTERNSHIP</h2>
         <div class="intern-item">
-            <p>東大松尾研発スタートアップ株式会社EQUES<br>AIエンジニアとしてLLM搭載型AIソリューション事業に従事。製薬企業と連携し、品質保証プロセスのDXプロジェクトに取り組む。</p>
+            <h3>・東大松尾研発スタートアップ株式会社EQUES</h3>
+            <p>AIエンジニアとしてLLM搭載型AIソリューション事業に従事。製薬企業と連携し、品質保証プロセスのDXプロジェクトに取り組む。</p>
         </div>
         <div class="intern-item">
-            <p>株式会社AVILEN<br>AIエンジニアとして図面認識AIモデル開発事業に従事。</p>
+            <h3>・株式会社AVILEN</h3>
+            <p>AIエンジニアとして図面認識AIモデル開発事業に従事。</p>
         </div>
     </section>
     
