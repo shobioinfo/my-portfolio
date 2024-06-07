@@ -14,7 +14,17 @@
             background-color: #333;
             color: #fff;
             padding: 10px 0;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            margin-left: 20px;
+        }
+        header h1 {
+            margin: 0;
+            padding-right: 20px;
+            font-size: 24px;
         }
         nav {
             background-color: #444;
@@ -30,39 +40,98 @@
             padding: 20px;
             margin: 20px 0;
         }
+        .about {
+            display: flex;
+            align-items: center;
+        }
         .about img {
             max-width: 200px;
             border-radius: 50%;
+            margin-right: 20px;
+        }
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .skill-item {
+            text-align: center;
+            max-width: 200px;
+        }
+        .skill-item img {
+            max-width: 50px;
+        }
+        h2 {
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>大島 将</h1>
+        <img src="KU_logo.PNG" alt="京大ロゴ" width="50" height="50">
+        <h1>京都大学大学院 医学研究科</h1>
     </header>
     <nav>
         <a href="#about">ABOUT</a>
         <a href="#presentation">PRESENTATION</a>
         <a href="#skills">SKILLS</a>
+        <a href="#overseas">OVERSEAS</a>
+        <a href="#internship">INTERNSHIP</a>
         <a href="#contact">CONTACT</a>
     </nav>
     <section id="about" class="about">
         <h2>ABOUT</h2>
         <img src="myface.PNG" alt="大島 将の写真">
-        <p>私は現在、京都大学大学院 医学研究科(ビッグデータ医科学分野)にてAIを用いたがんの治療研究を行っております。学部時代の生命科学の講義を通して、ヒトをプログラムする遺伝子そのものに惹かれていきました。その上で、遺伝子の制御機構が崩壊して引き起こされるがん疾患に対して、計算的なアプローチで効果的な治療法を考案したいと考えるようになりました。
+        <p>私は現在、京都大学大学院 医学研究科（ビッグデータ医科学分野）にてAIを用いたがんの治療研究を行っております。学部時代の生命科学の講義を通して、ヒトをプログラムする遺伝子そのものに惹かれていきました。その上で、遺伝子の制御機構が崩壊して引き起こされるがん疾患に対して、計算的なアプローチで効果的な治療法を考案したいと考えるようになりました。
         現在は医療ドメインでのデータサイエンスの応用研究をしておりますが、将来的にはAIを武器に様々な分野で活躍したいと考えております。</p>
     </section>
+    
     <section id="presentation">
         <h2>PRESENTATION</h2>
-        <p>大島将，岡本有司，原田陽平，鎌田真由美，奥野 恭史<br>グラフ間距離に基づく遺伝子制御ネットワークの重要遺伝子抽出法の提案」，『人工知能学会全国大会(査読有り)』、浜松,5月、2024年</p>
+        <p>大島将，岡本有司，原田陽平，鎌田真由美，奥野 恭史<br>「グラフ間距離に基づく遺伝子制御ネットワークの重要遺伝子抽出法の提案」，『人工知能学会全国大会(査読付き)』、浜松,5月、2024年</p>
+
     </section>
-    <section id="skills">
+    
+    <section id="skills" class="skills">
         <h2>SKILLS</h2>
-        <p>PyTorchやTensorFlowを用いた深層学習モデルの構築、統計検定2級(優秀賞)、バイオインフォマティクス技術者認定試験、G検定</p>
+        <div class="skill-item">
+            <img src="Python-logo.PNG" alt="Python">
+            <p>Python<br>Pythonコーディングを用いた研究活動経験<br>PytorchおよびTensorflowを用いた深層学習モデル実装経験</p>
+        </div>
+        <div class="skill-item">
+            <img src="qual_logo.jpg" alt="English">
+            <p>Qualification<br>統計検定2級(優秀賞)、バイオインフォマティクス技術者認定試験、G検定</p>
+        </div>
+
+    
     </section>
+        
+    <section id="overseas" class="overseas">
+        <h2>OVERSEAS</h2>
+        <img src="NASA_logo.JPG" alt="NASAの写真">
+        <p>高校生の時(2018年3月)、2~3週間ほどアメリカのNASAに研修に行き、実際にケネディ宇宙センターを訪れ、宇宙開発について学んだ。
+        またNASAの他にも、ハーバード大学やマサチューセッツ工科大学(MIT)、ダナ・ファーバー癌研究所を訪問し、現地の学生と交流したり、分子標的薬の研究についても学んだ。</p>
+    </section>
+
+    <section id="internship" class="internship">
+        <h2>INTERNSHIP</h2>
+        <div class="intern-item">
+            <img src="Python-logo.PNG" alt="Python">
+            <p>東大松尾研発スタートアップ株式会社EQUES<br>AIエンジニアとしてLLM搭載型AIソリューション事業に従事。製薬企業と連携し、品質保証プロセスのDXプロジェクトに取り組む。</p>
+        </div>
+        <div class="intern-item">
+            <img src="qual_logo.jpg" alt="English">
+            <p>株式会社AVILEN<br>AIエンジニアとして図面認識AIモデル開発事業に従事。</p>
+        </div>
+        
+        
+    </section>
+    
     <section id="contact">
         <h2>CONTACT</h2>
-        <p>お問い合わせはメールにてお願いいたします</p>
+        <p>お問い合わせは、メールにてお願いいたします</p>
     </section>
 </body>
 </html>
