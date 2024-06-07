@@ -42,17 +42,14 @@
         }
         .about, .overseas {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            flex-direction: column; /* 縦方向に配置 */
+            align-items: center; /* 中央揃え */
+            text-align: center; /* 中央揃え */
         }
         .about img, .overseas img {
             max-width: 200px;
             border-radius: 50%;
-            margin-right: 20px;
-        }
-        .about p, .overseas p {
-            max-width: 600px;
+            margin-bottom: 20px; /* 画像とテキストの間に余白 */
         }
         .skills {
             text-align: center; /* セクションタイトルの中央寄せ */
@@ -72,6 +69,9 @@
             display: block;
             margin: 0 auto 10px;
         }
+        .skill-item p {
+            text-align: left; /* 左詰め */
+        }
         h2 {
             text-align: center;
             border-bottom: 1px solid #ccc;
@@ -82,12 +82,15 @@
             font-size: 1.2em;
             margin-bottom: 10px;
         }
+        .contact {
+            text-align: center; /* 中央揃え */
+        }
     </style>
 </head>
 <body>
     <header>
         <img src="KU_logo.PNG" alt="京大ロゴ" width="50" height="50">
-        <h1>Kyoto University</h1>
+        <h1>京都大学大学院 医学研究科</h1>
     </header>
     <nav>
         <a href="#about">ABOUT</a>
@@ -143,7 +146,7 @@
         </div>
     </section>
     
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>CONTACT</h2>
         <p>お問い合わせは、メールにてお願いいたします</p>
         <p>oshima.sho.44a@st.kyoto-u.ac.jp</p>
