@@ -9,85 +9,60 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
         header {
-            background: #333;
-            color: white;
-            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
             text-align: center;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
+        nav {
+            background-color: #444;
+            padding: 10px 0;
             text-align: center;
         }
-        nav ul li {
-            display: inline;
-            margin: 0 1rem;
-        }
-        nav ul li a {
-            color: white;
+        nav a {
+            color: #fff;
+            margin: 0 15px;
             text-decoration: none;
         }
-        main {
-            padding: 2rem;
-        }
         section {
-            margin-bottom: 2rem;
+            padding: 20px;
+            margin: 20px 0;
         }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        p {
-            text-align: center;
+        .about img {
+            max-width: 200px;
+            border-radius: 50%;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>大島 将</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#presentation">PRESENTATION</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <section id="about">
-            <h2>ABOUT</h2>
-            <p>私は現在、京都大学大学院 医学研究科(ビッグデータ医科学分野)にてAIを用いたがんの治療研究を行っております。学部時代の生命科学の講義を通して、ヒトをプログラムする遺伝子そのものに惹かれていきました。その上で、遺伝子の制御機構が崩壊して引き起こされるがん疾患に対して、計算的なアプローチで効果的な治療法を考案したいと考えるようになりました。
-現在は医療ドメインでのデータサイエンスの応用研究をしておりますが、将来的にはAIを武器に様々な分野で活躍したいと考えております。</p>
-        </section>
-        <section id="presentation">
-            <h2>PRESENTATION</h2>
-            <p>大島将，岡本有司，原田陽平，鎌田真由美，奥野 恭史
-グラフ間距離に基づく遺伝子制御ネットワークの重要遺伝子抽出法の提案」，『人工知能学会全国大会(査読有り)』、浜松,5月、
-2024年</p>
-        </section>
-        <section id="skills">
-            <h2>SKILLS</h2>
-            <p>PyTorchやTensorFlowを用いた深層学習モデルの構築、統計検定2級(優秀賞)、バイオインフォマティクス技術者認定試験、G検定</p>
-        </section>
-        <section id="contact">
-            <h2>CONTACT</h2>
-            <p>お問い合わせはメールにてお願いいたします</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 大島 将 2024</p>
-    </footer>
+    <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#presentation">PRESENTATION</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+    <section id="about" class="about">
+        <h2>ABOUT</h2>
+        <img src="myface.PNG" alt="大島 将の写真">
+        <p>私は現在、京都大学大学院 医学研究科(ビッグデータ医科学分野)にてAIを用いたがんの治療研究を行っております。学部時代の生命科学の講義を通して、ヒトをプログラムする遺伝子そのものに惹かれていきました。その上で、遺伝子の制御機構が崩壊して引き起こされるがん疾患に対して、計算的なアプローチで効果的な治療法を考案したいと考えるようになりました。
+        現在は医療ドメインでのデータサイエンスの応用研究をしておりますが、将来的にはAIを武器に様々な分野で活躍したいと考えております。</p>
+    </section>
+    <section id="presentation">
+        <h2>PRESENTATION</h2>
+        <p>大島将，岡本有司，原田陽平，鎌田真由美，奥野 恭史<br>グラフ間距離に基づく遺伝子制御ネットワークの重要遺伝子抽出法の提案」，『人工知能学会全国大会(査読有り)』、浜松,5月、2024年</p>
+    </section>
+    <section id="skills">
+        <h2>SKILLS</h2>
+        <p>PyTorchやTensorFlowを用いた深層学習モデルの構築、統計検定2級(優秀賞)、バイオインフォマティクス技術者認定試験、G検定</p>
+    </section>
+    <section id="contact">
+        <h2>CONTACT</h2>
+        <p>お問い合わせはメールにてお願いいたします</p>
+    </section>
 </body>
 </html>
