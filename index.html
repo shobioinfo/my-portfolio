@@ -20,12 +20,12 @@
         }
         header img {
             margin-right: 20px;
-            width: 80px; /* アイコンを大きく */
-            height: 80px; /* アイコンを大きく */
+            width: 100px; /* アイコンを大きく */
+            height: 100px; /* アイコンを大きく */
         }
         header h1 {
             margin: 0;
-            font-size: 24px; /* フォントサイズを少し大きく */
+            font-size: 28px; /* フォントサイズを少し大きく */
         }
         nav {
             background-color: #444;
@@ -75,12 +75,14 @@
             display: block;
             margin: 0 auto 10px;
         }
-        .skill-item p {
-            text-align: center; /* 中央揃え */
-        }
-        .skill-title {
+        .skill-item .skill-title {
             font-size: 1.2em; /* タイトルを目立たせる */
             margin-bottom: 5px;
+        }
+        .skill-item .skill-details {
+            text-align: left; /* 左詰め */
+            max-width: 200px;
+            margin: 0 auto;
         }
         h2 {
             text-align: center;
@@ -127,12 +129,12 @@
             <div class="skill-item">
                 <img src="Python_logo.jpg" alt="Python">
                 <p class="skill-title">Python</p>
-                <p>Pythonコーディングを用いた研究活動経験<br>PytorchおよびTensorflowを用いた深層学習モデル実装経験</p>
+                <p class="skill-details">Pythonコーディングを用いた研究活動経験<br>PytorchおよびTensorflowを用いた深層学習モデル実装経験</p>
             </div>
             <div class="skill-item">
                 <img src="qual_logo.jpg" alt="Qualification">
                 <p class="skill-title">Qualification</p>
-                <p>統計検定2級(優秀賞)、バイオインフォマティクス技術者認定試験、G検定</p>
+                <p class="skill-details">統計検定2級(優秀賞)、バイオインフォマティクス技術者認定試験、G検定</p>
             </div>
         </div>
     </section>
